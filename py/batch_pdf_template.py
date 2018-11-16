@@ -1,10 +1,10 @@
 # Batch PDF Template
-# batch_pdf.py
+# batch_pdf_template.py
 
 # Horner and Shifrin
-# Author: Andrew Schreiber
+# Authors: Andrew Schreiber, Kip Kritis
 # Created: 6/1/2018
-# Modified: 6/1/2018
+# Modified: 11/16/2018
 
 '''
 Batch PDF Template
