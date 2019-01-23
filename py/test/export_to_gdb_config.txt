@@ -1,0 +1,46 @@
+[email]
+to_addr = Andrew Schreiber <apschreiber@hornershifrin.com>
+from_addr = H&S Postmaster <Postmaster@hornershifrin.com>
+subject = Automated SDE Geodatabase Backup
+ip = 12.156.204.68
+port = 25
+
+[log]
+title = Automated GIS Process Log
+process_name = Automated SDE Geodatabase Backup
+
+[dirs]
+in_dir = \\ARCSERVE\MapData
+
+[Playground]
+out_dir = \\PROMETHEUS\Office\IS\GIS\BackupGDB_SDE
+
+[ButlerConn_SDE]
+out_dir = \\PROMETHEUS\Office\IS\GIS\BackupGDB_SDE
+
+[Coridor66Conn_SDE]
+out_dir = \\PROMETHEUS\Office\IS\GIS\BackupGDB_SDE
+
+[HornerShifrin_SDE]
+out_dir = \\PROMETHEUS\Office\IS\GIS\BackupGDB_SDE
+
+[ILRWAConn_SDE]
+out_dir = \\PROMETHEUS\Office\IS\GIS\BackupGDB_SDE
+
+[JerseyCoRWConn_SDE]
+out_dir = \\APOLLO\environmental\1311800-JerseyCounty\GIS\BackupGDB_SDE
+
+[MarionILConn_SDE]
+out_dir = \\APOLLO\environmental\1233600\GIS\BackupGDB_SDE
+
+[MexicoMoConn_SDE]
+out_dir = \\APOLLO\environmental\0802911\GIS\BackupGDB_SDE
+
+[NixaConn_SDE]
+out_dir = \\APOLLO\environmental\1217100-NixaGIS\GIS\BackupGDB_SDE
+
+[RockCreekSDConn_SDE]
+out_dir = \\APOLLO\environmental\0906505\GIS\BackupGDB_SDE
+
+[WashUnivConn_SDE]
+out_dir = \\APOLLO\environmental\1304400-WashUGIS\GIS\BackupGDB_SDE\Automated Backup
