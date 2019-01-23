@@ -1,5 +1,5 @@
-# Polygon Vertices to 3D by Points 
-# poly_to_3d_by_point.py
+# Geometry Vertices to 3D by Points 
+# geomo_to_3d_by_point.py
 
 # Horner and Shifrin
 # Author: Andrew Schreiber, Kip Kritis
@@ -7,7 +7,7 @@
 # Modified: 1/23/19
 
 '''
-Template description
+Takes elevation points, matches them to a geometrie's vertices, and assigns elevations to the vertices
 '''
 
 import arcpy, os, sys, traceback, datetime
@@ -17,8 +17,8 @@ print "importing modules..."
 
 workspace = r"C:\Users\apschreiber\Dropbox\Projects\Git\pyGIS\py\test\test.gdb"
 
-source_line_fc = 'Line2'
-target_line_fc = 'Line1'
+source_fc = 'Line2'
+target_fc = 'Line1'
 
 ###################################################################
 
@@ -37,7 +37,7 @@ try:
 
     # Get the source geometry
     src_geometry = None
-    with arcpy.da.SearchCursor(source_line_fc, ["SHAPE@",]) as s_cursor:
+    with arcpy.da.SearchCursor(source_fc, ["SHAPE@",]) as s_cursor:
         for row in s_cursor:
             src_geometry = row[0]
         
@@ -46,7 +46,7 @@ try:
         del s_cursor
 
     # Update polyline geometries
-    with arcpy.da.UpdateCursor(target_line_fc, ["SHAPE@",]) as u_cursor:
+    with arcpy.da.UpdateCursor(target_fc, ["SHAPE@",]) as u_cursor:
         for row in u_cursor:
             row[0] = src_geometry
             u_cursor.updateRow(row)
